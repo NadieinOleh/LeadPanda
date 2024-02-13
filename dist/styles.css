@@ -1,8 +1,9 @@
 .bgTop {
   position: absolute;
+  top: -60px;
   z-index: -1;
   width: 100%;
-  height: 620px;
+  height: 602px;
   background-image: url("../../src/images/Group.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,7 +27,6 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  gap: 8px;
   width: 385px;
   height: 389px;
   padding: 20px 0 0 0;
@@ -43,9 +43,10 @@
 
 .bgTop {
   position: absolute;
+  top: -60px;
   z-index: -1;
   width: 100%;
-  height: 620px;
+  height: 602px;
   background-image: url("../../src/images/Group.png");
   background-repeat: no-repeat;
   background-size: cover;
