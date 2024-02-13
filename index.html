@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lead Panda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/normalize.css" />
+    <link rel="stylesheet" href="./dist/styles.css" />
+  </head>
+  <body>
+    <div class="bgTop"></div>
+    <main>
+      <section class="userBlock">
+        <div class="userAccount">
+          <div>
+            <img src="/src/images/user.png" alt="userFoto" />
+          </div>
+
+          <div class="userAccount__info">
+            <div>
+              <h2>Юлія Антонова</h2>
+              <h3>Масажист</h3>
+            </div>
+
+            <div>
+              <p class="subTitle">Номер телефону:</p>
+              <a href="tel:+380 123 45 67 89" target="_blank"
+                >+380 123 45 67 89</a
+              >
+            </div>
+
+            <div>
+              <p class="subTitle">Місто:</p>
+              <p>Київ</p>
+            </div>
+
+            <div>
+              <p class="subTitle">Адреса:</p>
+              <a
+                href="https://www.google.com/maps/place/Khreshchatyk+St,+30,+Cherkasy,+Cherkas'ka+oblast,+18000/data=!4m2!3m1!1s0x40d14c9254605499:0x35bf2b6cacfddaa3?sa=X&ved=2ahUKEwjGueqeqKiEAxXg2wIHHVoCC7AQ8gF6BAgPEAA"
+                target="_blank"
+                >Вулиця Хрещатик, 30</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <form class="form">
+          <select id="service" class="form__field" required>
+            <option selected value="">Послуга</option>
+            <option value="Thai">Тайський</option>
+            <option value="classic">Класичний</option>
+          </select>
+
+          <input type="date" id="date" class="form__field"  required min="2024-02-13"/>
+
+          <select id="time" class="form__field" required>
+            <option value="" selected>Час</option>
+            <option value="16">16.00</option>
+            <option value="17">17.00</option>
+            <option value="18">18.00</option>
+          </select>
+
+          <input
+            type="text"
+            id="name"
+            class="form__field"
+            placeholder="Ваше ім'я"
+            required
+          />
+
+          <input
+            type="tel"
+            id="phone"
+            class="form__field"
+            placeholder="Ваш номер телефону"
+            required
+          />
+
+          <div class="buttonContainer">
+            <p class="buttonContainer__text">Записатися</p>
+            <button class="buttonContainer__button">
+              <img src="/src/images/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./src/script/index.js"></script>
+  </body>
+</html>

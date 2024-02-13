@@ -1,0 +1,29 @@
+@import '../common/variables.scss';
+
+.form {
+  @include flexCenter;
+  gap: 32px;
+
+  width: max-content;
+  margin: 0 auto;
+
+  &__field {
+    border-bottom: 2px solid $secondary-color;
+    color: $secondary-color;
+    padding: 10px;
+    width: 368px;
+    height: max-content;
+
+    font-size: 1.25rem;
+
+    &:focus {
+      border-color: $primary-color;
+      color: $primary-color;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $secondary-color;
+    }
+  }
+}

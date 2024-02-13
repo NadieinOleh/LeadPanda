@@ -1,0 +1,30 @@
+.userBlock {
+  margin: 120px 0;
+}
+
+.userAccount {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+
+  margin-bottom: 24px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.subTitle {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(51, 51, 51, 0.5);
+}
+

@@ -1,0 +1,21 @@
+.buttonContainer {
+  @include flexCenter;
+  flex-direction: row;
+  align-self: baseline;
+  gap: 8px;
+
+  &__text {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__button {
+    @include flexCenter;
+    padding: 24px;
+  
+    border-radius: 50%;
+    background-color: $primary-color;
+  
+    cursor: pointer;
+  }
+}
