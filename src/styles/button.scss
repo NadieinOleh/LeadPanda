@@ -17,5 +17,9 @@
     background-color: $primary-color;
   
     cursor: pointer;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
   }
 }
