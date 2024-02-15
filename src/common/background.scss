@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .bgTop {
   position: absolute;
   top: -60px;
@@ -8,8 +10,24 @@
   background-image: url('../../src/images/Group.png');
   background-repeat: no-repeat;
   background-size: cover;
-
+  
   @media (max-width: 1300px) {
     background-size: contain;
+    top: -30px;
+  }
+  
+  &--main{
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+  
+  &--success{
+    @media (max-width: $mobile) {
+      top: 0px;
+      height: 273px;
+      background-size: cover;
+      background-position: center;
+    }
   }
 }

@@ -6,15 +6,17 @@
 
   width: max-content;
   margin: 0 auto;
+  padding: 0 20px;
 
   &__field {
-    border-bottom: 2px solid $secondary-color;
-    color: $secondary-color;
-    padding: 10px;
-    width: 368px;
+    min-width: 316px;
+    max-width: 368px;
     height: max-content;
 
+    border-bottom: 2px solid $secondary-color;
+    
     font-size: 1.25rem;
+    color: $secondary-color;
 
     &:focus {
       border-color: $primary-color;
